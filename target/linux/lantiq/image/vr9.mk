@@ -17,9 +17,11 @@ define Device/arcadyan_arv7519rw22
   DEVICE_ALT0_VARIANT := 2.1
   DEVICE_ALT1_VENDOR := Astoria Networks
   DEVICE_ALT1_MODEL := ARV7519RW22
+  KERNEL_SIZE := 2048k
   IMAGE_SIZE := 31232k
   DEVICE_PACKAGES := kmod-usb-dwc2
   SUPPORTED_DEVICES += ARV7519RW22
+  DEFAULT := n
 endef
 TARGET_DEVICES += arcadyan_arv7519rw22
 
@@ -241,6 +243,8 @@ define Device/zyxel_p-2812hnu-f3
   DEVICE_VARIANT := F3
   BOARD_NAME := P2812HNUF3
   DEVICE_PACKAGES := kmod-rt2800-pci wpad-basic-wolfssl kmod-usb-dwc2
+  KERNEL_SIZE := 2048k
   SUPPORTED_DEVICES += P2812HNUF3
+  DEFAULT := n
 endef
 TARGET_DEVICES += zyxel_p-2812hnu-f3
