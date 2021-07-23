@@ -972,11 +972,7 @@ define Device/sitecom_wlr-4100-v1-002
 	senao-header -r 0x0222 -p 0x104A -t 2
   DEVICE_VENDOR := Sitecom
   DEVICE_MODEL := WLR-4100
-<<<<<<< HEAD
-  DEVICE_VARIANT := v1002
-=======
   DEVICE_VARIANT := v1 002
->>>>>>> de0c380a5f... ramips: add support for Sitecom WLR-4100 v1 002
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci uboot-envtools
 endef
 TARGET_DEVICES += sitecom_wlr-4100-v1-002
