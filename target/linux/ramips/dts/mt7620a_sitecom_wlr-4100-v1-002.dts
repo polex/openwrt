@@ -32,7 +32,11 @@
 		wifi {
 			label = "blue:wifi";
 			gpios = <&gpio3 0 GPIO_ACTIVE_LOW>;
+<<<<<<< HEAD
 			linux,default-trigger = "phy0tpt";
+=======
+			linux,default-trigger = "phy1tpt";
+>>>>>>> de0c380a5f... ramips: add support for Sitecom WLR-4100 v1 002
 		};
 
 		wps {
@@ -96,7 +100,11 @@
 				read-only;
 			};
 
+<<<<<<< HEAD
 			config: partition@30000 {
+=======
+			partition@30000 {
+>>>>>>> de0c380a5f... ramips: add support for Sitecom WLR-4100 v1 002
 				label = "u-boot-env";
 				reg = <0x30000 0x10000>;
 				read-only;
@@ -132,7 +140,13 @@
 &ethernet {
 	pinctrl-names = "default";
 	pinctrl-0 = <&rgmii1_pins &mdio_pins>;
+<<<<<<< HEAD
 	mtd-mac-address = <&factory 0x4>;
+=======
+
+	nvmem-cells = <&macaddr_factory_4>;
+	nvmem-cell-names = "mac-address";
+>>>>>>> de0c380a5f... ramips: add support for Sitecom WLR-4100 v1 002
 
 	port@5 {
 		status = "okay";
@@ -182,3 +196,16 @@
 		function = "gpio";
 	};
 };
+<<<<<<< HEAD
+=======
+
+&factory {
+	compatible = "nvmem-cells";
+	#address-cells = <1>;
+	#size-cells = <1>;
+
+	macaddr_factory_4: macaddr@4 {
+		reg = <0x4 0x6>;
+	};
+};
+>>>>>>> de0c380a5f... ramips: add support for Sitecom WLR-4100 v1 002
