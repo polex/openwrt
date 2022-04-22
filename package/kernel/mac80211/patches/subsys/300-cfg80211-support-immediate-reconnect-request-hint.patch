@@ -42,8 +42,13 @@ Signed-off-by: Johannes Berg <johannes.berg@intel.com>
  	else
  		cfg80211_rx_mlme_mgmt(sdata->dev, buf, len);
  
+<<<<<<< HEAD
 @@ -4724,7 +4724,8 @@ void ieee80211_mgd_quiesce(struct ieee80
 		if (ifmgd->auth_data)
+=======
+@@ -4734,7 +4734,8 @@ void ieee80211_mgd_quiesce(struct ieee80
+ 		if (ifmgd->auth_data)
+>>>>>>> 75cbd8de006698a766126da682d8ae621bc7b0d4
  			ieee80211_destroy_auth_data(sdata, false);
  		cfg80211_tx_mlme_mgmt(sdata->dev, frame_buf,
 -				      IEEE80211_DEAUTH_FRAME_LEN);

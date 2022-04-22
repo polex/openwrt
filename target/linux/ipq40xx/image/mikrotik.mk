@@ -27,3 +27,4 @@ define Device/mikrotik_sxtsq-5-ac
 endef
 TARGET_DEVICES += mikrotik_sxtsq-5-ac
 
+
